@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <style type="text/css">
     /*body { background-color: #62288f; }*/
-    body { background: #ffffff url("images/bigpurplemonster.jpg") no-repeat center 130px; background-size: cover;}
-    .bigmonster { margin: 120px auto 0; text-align: center; width: 100%;}
+    /*body { background: #ffffff url("images/bigpurplemonster.jpg") no-repeat center 130px; background-size: cover;}*/
+    .bigmonster { margin: 120px auto 0; text-align: center;}
     /*.tagline { color: purple; text-align: center}*/
     .answers {
       margin-top: 230px;
@@ -30,29 +30,33 @@
 
     <div class="popover bs-popover-top bs-popover-top-docs">
     <div class="arrow"></div>
-    <h3 class="popover-header">Welcome to MonstAR</h3>
+    <h3 class="popover-header">Your Result</h3>
     <div class="popover-body">
-      <p>It's important for me to get to know you better. Let's start with what are you looking for currently?</p>
+      <p>You are well balance employee :-)</p>
     </div>
   </div>
 
-      <!-- <img src="images/bigpurplemonster.jpg" class="bigmonster" /> -->
-    <div class="answers">
-      <button type="button" class="btn btn-secondary btn-block">Looking for a raise</button>
-      <button type="button" class="btn btn-secondary btn-block">Looking for a promotion</button>
-      <button type="button" class="btn btn-secondary btn-block">Looking for a new job</button>
-      <button type="button" class="btn btn-secondary btn-block">Looking to make myself more valuable</button>
-      <button type="button" class="btn btn-secondary btn-block">Open to new opportunities</button>
-      <button type="button" class="btn btn-secondary btn-block">Just looking around</button>
+      <img src="images/radarchart.png" class="bigmonster" />
+
+
+    <div class="skillsPieChart"
+      data-values='{"jQuery": 4.5,"CSS/CSS3": 3.0,"Html5":3.0,"Python":4.0,"Node.js":4.0}'
+      data-width="300"
+      data-height="300"
+      data-red="0"
+      data-green="128"
+      data-blue="255">
+
+      <div class="chartCanvasWrap"></div>
+
     </div>
-
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="https://raw.githubusercontent.com/MehdiTAZI/JQuery-Radar-Plus/master/js/jquery-radar-plus.js"></script>
 
 <script type="text/javascript">
   $("button").click(function(){

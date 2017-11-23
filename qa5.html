@@ -30,20 +30,21 @@
 
     <div class="popover bs-popover-top bs-popover-top-docs">
     <div class="arrow"></div>
-    <h3 class="popover-header">Welcome to MonstAR</h3>
+    <h3 class="popover-header">Role</h3>
     <div class="popover-body">
-      <p>It's important for me to get to know you better. Let's start with what are you looking for currently?</p>
+      <p>Please select as many skills as it describes you from this list</p>
     </div>
   </div>
 
       <!-- <img src="images/bigpurplemonster.jpg" class="bigmonster" /> -->
     <div class="answers">
-      <button type="button" class="btn btn-secondary btn-block">Looking for a raise</button>
-      <button type="button" class="btn btn-secondary btn-block">Looking for a promotion</button>
-      <button type="button" class="btn btn-secondary btn-block">Looking for a new job</button>
-      <button type="button" class="btn btn-secondary btn-block">Looking to make myself more valuable</button>
-      <button type="button" class="btn btn-secondary btn-block">Open to new opportunities</button>
-      <button type="button" class="btn btn-secondary btn-block">Just looking around</button>
+      <button type="button" class="btn btn-secondary btn-block">Java</button>
+      <button type="button" class="btn btn-secondary btn-block">Problem Solving</button>
+      <button type="button" class="btn btn-secondary btn-block">IT Manager</button>
+      <button type="button" class="btn btn-secondary btn-block">Dev Ops</button>
+      <button type="button" class="btn btn-secondary btn-block">System Analyst</button>
+      <button type="button" class="btn btn-secondary btn-block">(Will keep adding predicted new ones after each one gets click)</button>
+      <button type="button" class="btn btn-success btn-block">Done</button>
     </div>
 
 
@@ -55,8 +56,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
 <script type="text/javascript">
-  $("button").click(function(){
-      $(location).attr('href', 'qa1.html');
+  $("button.btn-success").click(function(){
+      $(location).attr('href', 'summary.html');
   });
 
 </script>
