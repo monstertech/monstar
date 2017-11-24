@@ -59,7 +59,9 @@
   $("button.btn-success").click(function(){
       $(location).attr('href', 'qa6.html');
   });
-
+  $("button.btn-secondary").click(function(){
+    $(this).toggleClass("btn-secondary").toggleClass("btn-primary");
+  });
 </script>
   </body>
 </html>

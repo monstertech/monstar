@@ -174,22 +174,22 @@
 </div>
 <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
   <div class="card-body skills">
-      <button type="button" class="btn btn-success btn-block">Java</button>
-      <button type="button" class="btn btn-success btn-block">Problem Solving</button>
-      <button type="button" class="btn btn-success btn-block">IT Manager</button>
+      <button type="button" class="btn btn-primary btn-block">Java</button>
+      <button type="button" class="btn btn-primary btn-block">Problem Solving</button>
+      <button type="button" class="btn btn-primary btn-block">IT Manager</button>
       <button type="button" class="btn btn-secondary btn-block">Dev Ops</button>
       <button type="button" class="btn btn-secondary btn-block">System Analyst</button>
-      <button type="button" class="btn btn-success btn-block">Amazon Web Services (AWS)</button>
+      <button type="button" class="btn btn-primary btn-block">Amazon Web Services (AWS)</button>
       <button type="button" class="btn btn-secondary btn-block">Application Programming Interface (API)</button>
-      <button type="button" class="btn btn-success btn-block">Web Services</button>
+      <button type="button" class="btn btn-primary btn-block">Web Services</button>
       <button type="button" class="btn btn-secondary btn-block">Software Design</button>
-      <button type="button" class="btn btn-success btn-block">REST (Representational State Transfer)</button>
+      <button type="button" class="btn btn-primary btn-block">REST (Representational State Transfer)</button>
       <button type="button" class="btn btn-secondary btn-block">Software Development Lifecycle (SDLC)</button>
       <button type="button" class="btn btn-secondary btn-block">Big Data</button>
       <button type="button" class="btn btn-secondary btn-block">Scrum</button>
-      <button type="button" class="btn btn-success btn-block">Microsoft C#</button>
+      <button type="button" class="btn btn-primary btn-block">Microsoft C#</button>
       <button type="button" class="btn btn-secondary btn-block">iOS Swift</button>
-      <button type="button" class="btn btn-success btn-block">Software as a Service (SAAS)</button>
+      <button type="button" class="btn btn-primary btn-block">Software as a Service (SAAS)</button>
       <button type="button" class="btn btn-secondary btn-block">User Experience (UX)</button>
   </div>
 </div>
@@ -360,6 +360,9 @@
 </div>
 </div>
 
+<button type="button" class="roadmap btn-lg btn btn-success btn-block">CAREER ROADMAP</button>
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -367,9 +370,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
 <script type="text/javascript">
-  // $("button").click(function(){
-  //     $(location).attr('href', 'qa1.html');
-  // });
+  $("button.roadmap").click(function(){
+      $(location).attr('href', 'roadmap.html');
+  });
 
   $(".navbar-toggler").click(function(){
     $(".thumbie").toggle();
@@ -384,9 +387,12 @@
   $("#collapseThree").on('show.bs.collapse', function(){
     $("#carouselExampleIndicators").hide();
   });
+  $("#collapseThree").on('hide.bs.collapse', function(){
+    $("#carouselExampleIndicators").show();
+  });
 
-    $(".skills .btn-success, .skills .btn-secondary").click(function(){
-      $(this).toggleClass("btn-success").toggleClass("btn-secondary");
+    $(".skills .btn-primary, .skills .btn-secondary").click(function(){
+      $(this).toggleClass("btn-primary").toggleClass("btn-secondary");
     });
 
 </script>
